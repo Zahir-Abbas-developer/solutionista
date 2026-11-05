@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>About Destani Sabree · The Solutionista</title>
+  <meta name="description" content="Meet Destani Sabree, the operational strategist behind The Solutionista: Esthie Sculptress.">
+  <meta name="theme-color" content="#F5F2ED">
+
+  <!-- Mark JS as available before first paint, so entrance/reveal styles never flash -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== SECTION 1 · NAVIGATION ===================== -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="The Solutionista Esthie Sculptress, home">
+        <span class="logo__name">The Solutionista</span>
+        <span class="logo__sub">Esthie Sculptress</span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="primary-nav" aria-label="Primary">
+          <ul class="primary-nav__list">
+            <li><a class="nav-link" href="spa.html" data-nav-link>Spa &amp; Sculpting</a></li>
+            <li><a class="nav-link" href="signature.html" data-nav-link>Signature</a></li>
+            <li><a class="nav-link" href="executive.html" data-nav-link>Executive</a></li>
+            <li><a class="nav-link" href="events.html" data-nav-link>Events</a></li>
+            <li><a class="nav-link" href="about.html" aria-current="page" data-nav-link>About</a></li>
+          </ul>
+        </nav>
+
+        <a class="btn btn--ghost btn--sm header-cta" href="reserve.html" aria-label="Reserve a treatment">Reserve</a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-menu-open>
+          <span class="menu-toggle__line" aria-hidden="true"></span>
+          <span class="menu-toggle__line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu (outside header/main so both can be made inert) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+    <div class="container mobile-menu__top">
+      <span class="logo" aria-hidden="true">
+        <span class="logo__name">The Solutionista</span>
+        <span class="logo__sub">Esthie Sculptress</span>
+      </span>
+      <button class="menu-close" type="button" aria-label="Close menu" data-menu-close></button>
+    </div>
+
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <ul class="mobile-menu__list">
+        <li data-stagger style="--i:0"><a class="mobile-menu__link" href="spa.html" data-nav-link>Spa &amp; Sculpting</a></li>
+        <li data-stagger style="--i:1"><a class="mobile-menu__link" href="signature.html" data-nav-link>Signature</a></li>
+        <li data-stagger style="--i:2"><a class="mobile-menu__link" href="executive.html" data-nav-link>Executive</a></li>
+        <li data-stagger style="--i:3"><a class="mobile-menu__link" href="events.html" data-nav-link>Events</a></li>
+        <li data-stagger style="--i:4"><a class="mobile-menu__link" href="about.html" aria-current="page" data-nav-link>About</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu__cta" data-stagger style="--i:5">
+      <a class="btn btn--primary btn--block" href="reserve.html" aria-label="Reserve a treatment">Reserve</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="hero hero--page" id="top" aria-labelledby="page-title">
+      <div class="hero__media">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/hero-about-wide.jpg"
+            width="1370" height="1148">
+          <img
+            src="images/hero-about-narrow.jpg"
+            width="861" height="1148"
+            alt="Destani Sabree, founder of The Solutionista, smiling in black esthetician scrubs in her softly lit treatment room."
+            style="--focus: 50% 28%"
+            fetchpriority="high"
+            decoding="async">
+        </picture>
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <p class="eyebrow" data-enter style="--i:0">About</p>
+          <h1 class="hero__title" id="page-title" data-enter style="--i:1">Meet Destani Sabree</h1>
+          <p class="hero__lead" data-enter style="--i:2">Operational strategist turned Esthie Sculptress, holding every room she works in to one standard.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="founder" id="about" aria-labelledby="founder-title">
+      <div class="container founder__grid">
+
+        <figure class="founder__figure" data-reveal="left">
+          <div class="framed">
+            <img
+              src="images/founder-portrait.jpg"
+              width="800" height="1000"
+              loading="lazy" decoding="async"
+              alt="Portrait of Destani Sabree, founder of The Solutionista, in a tailored camel dress.">
+          </div>
+          <figcaption class="founder__caption">Destani Sabree — Founder, The Solutionista</figcaption>
+        </figure>
+
+        <div class="founder__story" data-reveal style="--delay:120ms">
+          <p class="eyebrow">The Founder</p>
+          <h2 class="founder__title" id="founder-title">The Strategist Behind the Stillness</h2>
+
+          <div class="founder__copy">
+            <p>
+              Destani Sabree built her career as an operational strategist, the person leaders trusted to see the whole board. Then she stepped out of the rat race to build something of her own: a practice where that bird’s-eye operational design meets intentional, hands-on care.
+            </p>
+            <p>
+              Today, The Solutionista holds both worlds. In the treatment room, she refines, sculpts, and restores. In your operations, she removes friction and architects calm. On stage, she carries the room. Different arenas, one standard.
+            </p>
+          </div>
+
+          <blockquote class="founder__quote" data-reveal style="--delay:450ms">
+            <p>“Every service I offer answers the same question: how do I return your time, your energy, and your ease?”</p>
+          </blockquote>
+
+          <a class="btn btn--ghost founder__cta" href="reserve.html">Work With Destani</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CLOSING CTA ===================== -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band__inner" data-reveal-group>
+          <p class="eyebrow eyebrow--plain" data-reveal>Reservations</p>
+          <h2 class="section-head__title" id="cta-title" data-reveal>Ready When You Are</h2>
+          <p class="cta-band__line" data-reveal>
+            Every appointment is held exclusively for you, reserved with a $50 deposit that is credited in full at checkout.
+          </p>
+          <div class="cta-band__actions" data-reveal>
+            <a class="btn btn--primary" href="reserve.html">Reserve Your Appointment</a>
+            <a class="btn btn--ghost" href="spa.html">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== SECTION 11 · FOOTER ===================== -->
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer__top">
+
+        <!-- Col 1 · Brand -->
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="The Solutionista Esthie Sculptress, home">
+            <span class="logo__name">The Solutionista</span>
+            <span class="logo__sub">Esthie Sculptress</span>
+          </a>
+          <p class="footer__tagline">Quiet luxury. Intentional care. Natural transformation.</p>
+        </div>
+
+        <!-- Col 2 · Services -->
+        <nav aria-labelledby="footer-services">
+          <h2 class="footer__label" id="footer-services">Services</h2>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="spa.html">Spa &amp; Facials</a></li>
+            <li><a class="footer__link" href="spa.html#sculpting">Body Contouring</a></li>
+            <li><a class="footer__link" href="spa.html#thermal">Detox &amp; Wraps</a></li>
+            <li><a class="footer__link" href="executive.html">Executive Operations</a></li>
+            <li><a class="footer__link" href="events.html">Events &amp; Vocals</a></li>
+          </ul>
+        </nav>
+
+        <!-- Col 3 · Studio -->
+        <nav aria-labelledby="footer-studio">
+          <h2 class="footer__label" id="footer-studio">Studio</h2>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="about.html">About Destani</a></li>
+            <li><a class="footer__link" href="reserve.html#reservation-policy">Reservation Policy</a></li>
+            <li><a class="footer__link" href="reserve.html">Reserve</a></li>
+          </ul>
+        </nav>
+
+        <!-- Col 4 · Contact -->
+        <div>
+          <h2 class="footer__label">Contact</h2>
+          <a class="footer__link" href="mailto:thesolutionistapro@gmail.com">thesolutionistapro<wbr>@gmail.com</a>
+
+          <!-- TODO: replace each href="#" with the real profile URL -->
+          <ul class="footer__social" aria-label="Social media">
+            <li>
+              <a href="#" aria-label="The Solutionista on Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="The Solutionista on TikTok">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/>
+                  <path d="M14 3c.4 2.6 2.4 4.6 5 5"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Destani Sabree on LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M8 10.5V17"/>
+                  <path d="M8 7.25v.01"/>
+                  <path d="M12 17v-6.5"/>
+                  <path d="M12 13.5a2.5 2.5 0 0 1 5 0V17"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <span class="footer__divider" aria-hidden="true"></span>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© <span data-year>2026</span> The Solutionista: Esthie Sculptress. All rights reserved.</p>
+        <p class="footer__motto">Refine · Sculpt · Restore</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

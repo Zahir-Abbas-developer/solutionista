@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Executive &amp; Lifestyle Operations · The Solutionista</title>
+  <meta name="description" content="Executive operations, workflow systems, logistics and lifestyle concierge retainers for high-performing leaders, from $300 per month.">
+  <meta name="theme-color" content="#F5F2ED">
+
+  <!-- Mark JS as available before first paint, so entrance/reveal styles never flash -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== SECTION 1 · NAVIGATION ===================== -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="The Solutionista Esthie Sculptress, home">
+        <span class="logo__name">The Solutionista</span>
+        <span class="logo__sub">Esthie Sculptress</span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="primary-nav" aria-label="Primary">
+          <ul class="primary-nav__list">
+            <li><a class="nav-link" href="spa.html" data-nav-link>Spa &amp; Sculpting</a></li>
+            <li><a class="nav-link" href="signature.html" data-nav-link>Signature</a></li>
+            <li><a class="nav-link" href="executive.html" aria-current="page" data-nav-link>Executive</a></li>
+            <li><a class="nav-link" href="events.html" data-nav-link>Events</a></li>
+            <li><a class="nav-link" href="about.html" data-nav-link>About</a></li>
+          </ul>
+        </nav>
+
+        <a class="btn btn--ghost btn--sm header-cta" href="reserve.html" aria-label="Reserve a treatment">Reserve</a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-menu-open>
+          <span class="menu-toggle__line" aria-hidden="true"></span>
+          <span class="menu-toggle__line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu (outside header/main so both can be made inert) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+    <div class="container mobile-menu__top">
+      <span class="logo" aria-hidden="true">
+        <span class="logo__name">The Solutionista</span>
+        <span class="logo__sub">Esthie Sculptress</span>
+      </span>
+      <button class="menu-close" type="button" aria-label="Close menu" data-menu-close></button>
+    </div>
+
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <ul class="mobile-menu__list">
+        <li data-stagger style="--i:0"><a class="mobile-menu__link" href="spa.html" data-nav-link>Spa &amp; Sculpting</a></li>
+        <li data-stagger style="--i:1"><a class="mobile-menu__link" href="signature.html" data-nav-link>Signature</a></li>
+        <li data-stagger style="--i:2"><a class="mobile-menu__link" href="executive.html" aria-current="page" data-nav-link>Executive</a></li>
+        <li data-stagger style="--i:3"><a class="mobile-menu__link" href="events.html" data-nav-link>Events</a></li>
+        <li data-stagger style="--i:4"><a class="mobile-menu__link" href="about.html" data-nav-link>About</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu__cta" data-stagger style="--i:5">
+      <a class="btn btn--primary btn--block" href="reserve.html" aria-label="Reserve a treatment">Reserve</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="hero hero--page" id="top" aria-labelledby="page-title">
+      <div class="hero__media">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/hero-executive-2000.webp"
+            width="1800" height="1091">
+          <img
+            src="images/hero-executive-1080.webp"
+            width="900" height="1200"
+            alt="A minimal wooden desk beneath a slim pendant light in a quiet, light-filled office."
+            style="--focus: 45% 70%"
+            fetchpriority="high"
+            decoding="async">
+        </picture>
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <p class="eyebrow" data-enter style="--i:0">Executive</p>
+          <h1 class="hero__title" id="page-title" data-enter style="--i:1">Calm, by Design</h1>
+          <p class="hero__lead" data-enter style="--i:2">Retainer-based operational support for high-performing leaders, built by a strategist who sees the whole board.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="executive on-dark" id="executive" aria-labelledby="executive-title">
+      <div class="container">
+
+        <header class="section-head section-head--wide" data-reveal-group>
+          <p class="eyebrow eyebrow--center" data-reveal>Executive &amp; Lifestyle Operations</p>
+          <h2 class="section-head__title" id="executive-title" data-reveal>Custom Solutions for Maximum Impact</h2>
+          <p class="section-head__intro" data-reveal>
+            For high-performing leaders: we eliminate the menial and architect the systems behind your days, so your attention stays on what only you can do.
+          </p>
+        </header>
+
+        <ul class="caps" data-reveal-group style="--stagger-step:80ms" aria-label="Capabilities">
+          <li class="cap" data-reveal>
+            <span class="cap__num" aria-hidden="true">I</span>
+            <h3 class="cap__name">Executive Operations</h3>
+            <ul class="cap__items">
+              <li>Calendar Architecture</li>
+              <li>Email Triage</li>
+              <li>Stakeholder Liaison</li>
+            </ul>
+          </li>
+          <li class="cap" data-reveal>
+            <span class="cap__num" aria-hidden="true">II</span>
+            <h3 class="cap__name">Project &amp; Workflow</h3>
+            <ul class="cap__items">
+              <li>Asana &amp; Notion Builds</li>
+              <li>SOP Design</li>
+              <li>Workflow Automation</li>
+            </ul>
+          </li>
+          <li class="cap" data-reveal>
+            <span class="cap__num" aria-hidden="true">III</span>
+            <h3 class="cap__name">Logistics</h3>
+            <ul class="cap__items">
+              <li>Travel Planning</li>
+              <li>Event Coordination</li>
+              <li>Vendor Management</li>
+            </ul>
+          </li>
+          <li class="cap" data-reveal>
+            <span class="cap__num" aria-hidden="true">IV</span>
+            <h3 class="cap__name">Lifestyle Concierge</h3>
+            <ul class="cap__items">
+              <li>Meal Prep Coordination</li>
+              <li>Errand Management</li>
+              <li>Household Oversight</li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="retainers" data-reveal-group aria-label="Monthly retainers">
+          <li class="retainers__item" data-reveal>
+            <article class="retainer" aria-labelledby="retainer-1">
+              <p class="eyebrow eyebrow--plain retainer__label">Tier One</p>
+              <h3 class="retainer__name" id="retainer-1">Essential Operations</h3>
+              <p class="retainer__hours">10 Hours Monthly</p>
+              <p class="retainer__price">$300<span class="retainer__per">/mo</span></p>
+              <span class="retainer__divider" aria-hidden="true"></span>
+              <p class="retainer__pitch">Core administrative lift, handled.</p>
+              <a class="btn btn--ghost retainer__cta" href="reserve.html" aria-label="Request a consultation for Essential Operations, $300 per month">Request a Consultation</a>
+            </article>
+          </li>
+
+          <li class="retainers__item retainers__item--featured" data-reveal>
+            <article class="retainer retainer--featured" aria-labelledby="retainer-2">
+              <p class="retainer__banner">Most Popular</p>
+              <p class="eyebrow eyebrow--plain retainer__label">Tier Two</p>
+              <h3 class="retainer__name" id="retainer-2">Growth &amp; Systems Architecture</h3>
+              <p class="retainer__hours">20 Hours Monthly</p>
+              <p class="retainer__price">$600<span class="retainer__per">/mo</span></p>
+              <span class="retainer__divider" aria-hidden="true"></span>
+              <p class="retainer__pitch">Operations plus the systems that scale them.</p>
+              <a class="btn btn--gold retainer__cta" href="reserve.html" aria-label="Request a consultation for Growth and Systems Architecture, $600 per month, most popular">Request a Consultation</a>
+            </article>
+          </li>
+
+          <li class="retainers__item" data-reveal>
+            <article class="retainer" aria-labelledby="retainer-3">
+              <p class="eyebrow eyebrow--plain retainer__label">Tier Three</p>
+              <h3 class="retainer__name" id="retainer-3">Executive Partner &amp; Concierge</h3>
+              <p class="retainer__hours">30 Hours Monthly</p>
+              <p class="retainer__price">$900<span class="retainer__per">/mo</span></p>
+              <span class="retainer__divider" aria-hidden="true"></span>
+              <p class="retainer__pitch">Full operational partnership, business and lifestyle.</p>
+              <a class="btn btn--ghost retainer__cta" href="reserve.html" aria-label="Request a consultation for Executive Partner and Concierge, $900 per month">Request a Consultation</a>
+            </article>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ===================== CLOSING CTA ===================== -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band__inner" data-reveal-group>
+          <p class="eyebrow eyebrow--plain" data-reveal>Reservations</p>
+          <h2 class="section-head__title" id="cta-title" data-reveal>Ready When You Are</h2>
+          <p class="cta-band__line" data-reveal>
+            Every appointment is held exclusively for you, reserved with a $50 deposit that is credited in full at checkout.
+          </p>
+          <div class="cta-band__actions" data-reveal>
+            <a class="btn btn--primary" href="reserve.html">Request a Consultation</a>
+            <a class="btn btn--ghost" href="mailto:thesolutionistapro@gmail.com">Email the Studio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== SECTION 11 · FOOTER ===================== -->
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer__top">
+
+        <!-- Col 1 · Brand -->
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="The Solutionista Esthie Sculptress, home">
+            <span class="logo__name">The Solutionista</span>
+            <span class="logo__sub">Esthie Sculptress</span>
+          </a>
+          <p class="footer__tagline">Quiet luxury. Intentional care. Natural transformation.</p>
+        </div>
+
+        <!-- Col 2 · Services -->
+        <nav aria-labelledby="footer-services">
+          <h2 class="footer__label" id="footer-services">Services</h2>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="spa.html">Spa &amp; Facials</a></li>
+            <li><a class="footer__link" href="spa.html#sculpting">Body Contouring</a></li>
+            <li><a class="footer__link" href="spa.html#thermal">Detox &amp; Wraps</a></li>
+            <li><a class="footer__link" href="executive.html">Executive Operations</a></li>
+            <li><a class="footer__link" href="events.html">Events &amp; Vocals</a></li>
+          </ul>
+        </nav>
+
+        <!-- Col 3 · Studio -->
+        <nav aria-labelledby="footer-studio">
+          <h2 class="footer__label" id="footer-studio">Studio</h2>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="about.html">About Destani</a></li>
+            <li><a class="footer__link" href="reserve.html#reservation-policy">Reservation Policy</a></li>
+            <li><a class="footer__link" href="reserve.html">Reserve</a></li>
+          </ul>
+        </nav>
+
+        <!-- Col 4 · Contact -->
+        <div>
+          <h2 class="footer__label">Contact</h2>
+          <a class="footer__link" href="mailto:thesolutionistapro@gmail.com">thesolutionistapro<wbr>@gmail.com</a>
+
+          <!-- TODO: replace each href="#" with the real profile URL -->
+          <ul class="footer__social" aria-label="Social media">
+            <li>
+              <a href="#" aria-label="The Solutionista on Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="The Solutionista on TikTok">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/>
+                  <path d="M14 3c.4 2.6 2.4 4.6 5 5"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Destani Sabree on LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M8 10.5V17"/>
+                  <path d="M8 7.25v.01"/>
+                  <path d="M12 17v-6.5"/>
+                  <path d="M12 13.5a2.5 2.5 0 0 1 5 0V17"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <span class="footer__divider" aria-hidden="true"></span>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© <span data-year>2026</span> The Solutionista: Esthie Sculptress. All rights reserved.</p>
+        <p class="footer__motto">Refine · Sculpt · Restore</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

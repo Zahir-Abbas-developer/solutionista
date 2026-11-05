@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Solutionista · Esthie Sculptress | Destani Sabree</title>
+  <meta name="description" content="The Solutionista: Esthie Sculptress by Destani Sabree. Advanced esthetics, body sculpting, executive operations retainers and event hosting, delivered with quiet intention.">
+  <meta name="theme-color" content="#F5F2ED">
+
+  <!-- Mark JS as available before first paint, so entrance/reveal styles never flash -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== SECTION 1 · NAVIGATION ===================== -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="The Solutionista Esthie Sculptress, home">
+        <span class="logo__name">The Solutionista</span>
+        <span class="logo__sub">Esthie Sculptress</span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="primary-nav" aria-label="Primary">
+          <ul class="primary-nav__list">
+            <li><a class="nav-link" href="spa.html" data-nav-link>Spa &amp; Sculpting</a></li>
+            <li><a class="nav-link" href="signature.html" data-nav-link>Signature</a></li>
+            <li><a class="nav-link" href="executive.html" data-nav-link>Executive</a></li>
+            <li><a class="nav-link" href="events.html" data-nav-link>Events</a></li>
+            <li><a class="nav-link" href="about.html" data-nav-link>About</a></li>
+          </ul>
+        </nav>
+
+        <a class="btn btn--ghost btn--sm header-cta" href="reserve.html" aria-label="Reserve a treatment">Reserve</a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-menu-open>
+          <span class="menu-toggle__line" aria-hidden="true"></span>
+          <span class="menu-toggle__line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu (outside header/main so both can be made inert) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+    <div class="container mobile-menu__top">
+      <span class="logo" aria-hidden="true">
+        <span class="logo__name">The Solutionista</span>
+        <span class="logo__sub">Esthie Sculptress</span>
+      </span>
+      <button class="menu-close" type="button" aria-label="Close menu" data-menu-close></button>
+    </div>
+
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <ul class="mobile-menu__list">
+        <li data-stagger style="--i:0"><a class="mobile-menu__link" href="spa.html" data-nav-link>Spa &amp; Sculpting</a></li>
+        <li data-stagger style="--i:1"><a class="mobile-menu__link" href="signature.html" data-nav-link>Signature</a></li>
+        <li data-stagger style="--i:2"><a class="mobile-menu__link" href="executive.html" data-nav-link>Executive</a></li>
+        <li data-stagger style="--i:3"><a class="mobile-menu__link" href="events.html" data-nav-link>Events</a></li>
+        <li data-stagger style="--i:4"><a class="mobile-menu__link" href="about.html" data-nav-link>About</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu__cta" data-stagger style="--i:5">
+      <a class="btn btn--primary btn--block" href="reserve.html" aria-label="Reserve a treatment">Reserve</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/hero-home-2400.webp"
+            width="2400" height="3600">
+          <img
+            src="images/hero-home-1080.webp"
+            width="1080" height="1600"
+            alt="A smooth white stone resting on travertine beside dried flowers and an amber dropper bottle, in warm cream light."
+            fetchpriority="high"
+            decoding="async">
+        </picture>
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <p class="eyebrow" data-enter style="--i:0">
+            <span>The Solutionista</span>
+            <span class="eyebrow__sep" aria-hidden="true">·</span>
+            <span>Esthie Sculptress</span>
+          </p>
+
+          <h1 class="hero__title" id="hero-title" data-enter style="--i:1">
+            <span class="hero__word">Refine<span class="hero__dot">.</span></span>
+            <span class="hero__word">Sculpt<span class="hero__dot">.</span></span>
+            <span class="hero__word">Restore<span class="hero__dot">.</span></span>
+          </h1>
+
+          <p class="hero__lead" data-enter style="--i:2">
+            A calm space where restoration meets transformation: advanced esthetics, body sculpting, and executive-level care, delivered with quiet intention.
+          </p>
+
+          <div class="hero__ctas" data-enter style="--i:3">
+            <a class="btn btn--primary" href="reserve.html" aria-label="Book a treatment">Book a Treatment</a>
+            <a class="btn btn--ghost" href="spa.html" aria-label="Explore Services: spa and sculpting menu">Explore Services</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#manifesto" aria-label="Scroll to the manifesto">
+        <span class="scroll-cue__label" aria-hidden="true">Scroll</span>
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title" data-scene>
+      <div class="container manifesto__inner">
+        <span class="manifesto__rule" aria-hidden="true"></span>
+
+        <h2 class="eyebrow eyebrow--plain manifesto__eyebrow" id="manifesto-title" data-scene-item style="--delay:250ms">The Manifesto</h2>
+
+        <figure class="manifesto__figure">
+          <blockquote class="manifesto__quote" data-scene-item style="--delay:450ms">
+            <p class="manifesto__statement">
+              I am The Solutionista. I create a calm space where restoration meets transformation.
+              Here, <em>luxury is quiet</em>. <em>Care is intentional</em>. And <em>transformation unfolds naturally</em>.
+            </p>
+          </blockquote>
+          <figcaption class="manifesto__attribution" data-scene-item style="--delay:650ms">
+            <span aria-hidden="true">— </span>Destani Sabree, Founder
+          </figcaption>
+        </figure>
+
+        <span class="manifesto__rule manifesto__rule--bottom" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <!-- ===================== THE PRACTICE (home) ===================== -->
+    <section class="pillars" id="explore" aria-labelledby="pillars-title">
+      <div class="container">
+        <header class="section-head" data-reveal-group>
+          <p class="eyebrow eyebrow--center" data-reveal>The Practice</p>
+          <h2 class="section-head__title" id="pillars-title" data-reveal>Different Arenas, One Standard</h2>
+          <p class="section-head__intro section-head__intro--narrow" data-reveal>
+            Restoration in the treatment room, calm in your operations, presence on the stage. Choose where to begin.
+          </p>
+        </header>
+
+        <ul class="pillars__grid" data-reveal-group style="--stagger-step:80ms">
+          <li data-reveal>
+            <article class="pillar">
+              <div class="framed pillar__media">
+                <span class="pillar__crop">
+                  <img src="images/card-spa.webp" width="720" height="900" loading="lazy" decoding="async"
+                    alt="An esthetician's hands gently massaging a client's face during a facial.">
+                </span>
+              </div>
+              <p class="eyebrow eyebrow--plain pillar__label">Spa &amp; Sculpting</p>
+              <h3 class="pillar__title"><a class="pillar__link" href="spa.html">Refine, Sculpt &amp; Restore</a></h3>
+              <p class="pillar__text">Custom facials, body contouring and thermal rituals, curated around your skin.</p>
+              <span class="pillar__more" aria-hidden="true">Discover <span class="pillar__arrow">→</span></span>
+            </article>
+          </li>
+
+          <li data-reveal>
+            <article class="pillar">
+              <div class="framed pillar__media">
+                <span class="pillar__crop">
+                  <img src="images/card-signature.webp" width="720" height="900" loading="lazy" decoding="async"
+                    alt="A candlelit steam room with warm stone benches glowing in soft golden light.">
+                </span>
+              </div>
+              <p class="eyebrow eyebrow--plain pillar__label">The Signature</p>
+              <h3 class="pillar__title"><a class="pillar__link" href="signature.html">The Signature Experience</a></h3>
+              <p class="pillar__text">Our most complete ritual: 120 unhurried minutes of artistry, sculpting and restoration.</p>
+              <span class="pillar__more" aria-hidden="true">Discover <span class="pillar__arrow">→</span></span>
+            </article>
+          </li>
+
+          <li data-reveal>
+            <article class="pillar">
+              <div class="framed pillar__media">
+                <span class="pillar__crop">
+                  <img src="images/card-executive.webp" width="720" height="900" loading="lazy" decoding="async"
+                    alt="A minimal wooden desk beneath a slim pendant light in a quiet, light-filled office.">
+                </span>
+              </div>
+              <p class="eyebrow eyebrow--plain pillar__label">Executive</p>
+              <h3 class="pillar__title"><a class="pillar__link" href="executive.html">Executive &amp; Lifestyle Operations</a></h3>
+              <p class="pillar__text">Monthly retainers that remove friction and architect the systems behind your days.</p>
+              <span class="pillar__more" aria-hidden="true">Discover <span class="pillar__arrow">→</span></span>
+            </article>
+          </li>
+
+          <li data-reveal>
+            <article class="pillar">
+              <div class="framed pillar__media">
+                <span class="pillar__crop">
+                  <img src="images/card-events.webp" width="720" height="900" loading="lazy" decoding="async"
+                    alt="A gold vintage microphone on a stand against soft grey drapery.">
+                </span>
+              </div>
+              <p class="eyebrow eyebrow--plain pillar__label">Events</p>
+              <h3 class="pillar__title"><a class="pillar__link" href="events.html">Hosting &amp; Live Vocals</a></h3>
+              <p class="pillar__text">Emcee direction and curated live performance for evenings that deserve a steady hand.</p>
+              <span class="pillar__more" aria-hidden="true">Discover <span class="pillar__arrow">→</span></span>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CLOSING CTA ===================== -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band__inner" data-reveal-group>
+          <p class="eyebrow eyebrow--plain" data-reveal>Reservations</p>
+          <h2 class="section-head__title" id="cta-title" data-reveal>Ready When You Are</h2>
+          <p class="cta-band__line" data-reveal>
+            Every appointment is held exclusively for you, reserved with a $50 deposit that is credited in full at checkout.
+          </p>
+          <div class="cta-band__actions" data-reveal>
+            <a class="btn btn--primary" href="reserve.html">Reserve Your Appointment</a>
+            <a class="btn btn--ghost" href="about.html">Meet Destani</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== SECTION 11 · FOOTER ===================== -->
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer__top">
+
+        <!-- Col 1 · Brand -->
+        <div class="footer__brand">
+          <a class="logo" href="index.html" aria-label="The Solutionista Esthie Sculptress, home">
+            <span class="logo__name">The Solutionista</span>
+            <span class="logo__sub">Esthie Sculptress</span>
+          </a>
+          <p class="footer__tagline">Quiet luxury. Intentional care. Natural transformation.</p>
+        </div>
+
+        <!-- Col 2 · Services -->
+        <nav aria-labelledby="footer-services">
+          <h2 class="footer__label" id="footer-services">Services</h2>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="spa.html">Spa &amp; Facials</a></li>
+            <li><a class="footer__link" href="spa.html#sculpting">Body Contouring</a></li>
+            <li><a class="footer__link" href="spa.html#thermal">Detox &amp; Wraps</a></li>
+            <li><a class="footer__link" href="executive.html">Executive Operations</a></li>
+            <li><a class="footer__link" href="events.html">Events &amp; Vocals</a></li>
+          </ul>
+        </nav>
+
+        <!-- Col 3 · Studio -->
+        <nav aria-labelledby="footer-studio">
+          <h2 class="footer__label" id="footer-studio">Studio</h2>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="about.html">About Destani</a></li>
+            <li><a class="footer__link" href="reserve.html#reservation-policy">Reservation Policy</a></li>
+            <li><a class="footer__link" href="reserve.html">Reserve</a></li>
+          </ul>
+        </nav>
+
+        <!-- Col 4 · Contact -->
+        <div>
+          <h2 class="footer__label">Contact</h2>
+          <a class="footer__link" href="mailto:thesolutionistapro@gmail.com">thesolutionistapro<wbr>@gmail.com</a>
+
+          <!-- TODO: replace each href="#" with the real profile URL -->
+          <ul class="footer__social" aria-label="Social media">
+            <li>
+              <a href="#" aria-label="The Solutionista on Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="The Solutionista on TikTok">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/>
+                  <path d="M14 3c.4 2.6 2.4 4.6 5 5"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Destani Sabree on LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M8 10.5V17"/>
+                  <path d="M8 7.25v.01"/>
+                  <path d="M12 17v-6.5"/>
+                  <path d="M12 13.5a2.5 2.5 0 0 1 5 0V17"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <span class="footer__divider" aria-hidden="true"></span>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© <span data-year>2026</span> The Solutionista: Esthie Sculptress. All rights reserved.</p>
+        <p class="footer__motto">Refine · Sculpt · Restore</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
