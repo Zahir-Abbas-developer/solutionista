@@ -1,0 +1,25 @@
+Photo credits: The Solutionista site
+====================================
+
+All photos come from Unsplash and are used under the Unsplash License
+(https://unsplash.com/license): free for commercial use, no attribution
+required. Credit is still appreciated, and each photo's photographer is
+listed on its page at https://unsplash.com/photos/<id>.
+
+File(s)                          Unsplash photo id
+-------------------------------  ---------------------------
+hero-home-2400 / -1080           1793100123531-4924ea242f5f
+hero-spa-2000 / -1080            1745327883348-8d78cb4661b0
+hero-signature-2000 / -1080      1774771698908-c797c66b242b
+hero-executive-2000 / -1080      1784012980517-005c26585344
+card-executive                   1784012980517-005c26585344
+hero-events-2000 / -1080         1657086869208-4c509803713a
+card-events                      1657086869208-4c509803713a
+hero-reserve-2000 / -1080        1620000190821-abd8f262b86f
+facial-lead                      1570172619644-dfd03ed5d881
+card-spa                         1731514771613-991a02407132
+card-signature                   1761470575018-135c213340eb
+
+Founder photos (supplied by the client, not Unsplash):
+  hero-about-wide.jpg / hero-about-narrow.jpg   Destani in black scrubs (About hero)
+  founder-portrait.jpg                         Destani in camel dress (founder section)
